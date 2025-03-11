@@ -20,70 +20,17 @@
     <p>¯\_(ツ)_/¯ </p>
     <img src="dontpanic.jpeg" alt="dont panic logo"> 
 
-    <p>Play whack a mole:</p>
-    <p>Click on the green circles to score points. You have 60 seconds to score as many points as possible.</p>
-    <div class="game-container">
-        <div class="score-board">Score: <span id="score">0</span></div>
-        <div class="time-board">Time: <span id="time">60</span>s</div>
-        <div class="mole-container">
-            <div class="mole" id="mole1"></div>
-            <div class="mole" id="mole2"></div>
-            <div class="mole" id="mole3"></div>
-            <div class="mole" id="mole4"></div>
-            <div class="mole" id="mole5"></div>
-            <div class="mole" id="mole6"></div>
-        </div>
-    </div>
-    <script>
-        const moles = document.querySelectorAll('.mole');
-        let score = 0;
-        let activeMole = null;
-        let timeLeft = 60;
-        let gameInterval;
-        let timerInterval;
 
-        function randomMole() {
-            moles.forEach(mole => mole.classList.remove('active'));
-            const index = Math.floor(Math.random() * moles.length);
-            activeMole = moles[index];
-            activeMole.classList.add('active');
-        }
+    <h2><a href="lovely.html" target="_blank"> Lovely stuff </a></h2></br>
+    <h2><a href="Whack.html" target="_blank"> Whack a Mole </a></h2></br>
+    <h2><a href="chimp.html" target="_blank"> Just a picture of a Chimp </a></h2></br>
+    <h2><a href="secret.html" target="_blank"> Sorry, I had to do it. </a></h2></br>
 
-        function whackMole(event) {
-            if (event.target === activeMole) {
-                score++;
-                document.getElementById('score').textContent = score;
-                activeMole.classList.remove('active');
-                randomMole();
-            }
-        }
-
-        function startGame() {
-            gameInterval = setInterval(randomMole, 1000);
-            timerInterval = setInterval(updateTimer, 1000);
-        }
-
-        function updateTimer() {
-            timeLeft--;
-            document.getElementById('time').textContent = timeLeft;
-            if (timeLeft <= 0) {
-                clearInterval(gameInterval);
-                clearInterval(timerInterval);
-                alert('Game over! Your score is ' + score);
-            }
-        }
-
-        moles.forEach(mole => mole.addEventListener('click', whackMole));
-
-        startGame();
-    </script>
-  
-    <h3>Thanks for playing! (づ｡◕‿‿◕｡)</h3>
-
-    <h2><a href="lovely.html" target="_blank"> Click here to test a link to a second page!</a></h2>
 
     <h4>\m/_(>_<)_\m/</h4>
 
+    <h2><a href="https://hackertyper.net" target="_blank"> Want to feel like a real hacker? </a></h2>
+    
     <img class="counter" src='https://www.free-website-hit-counter.com/zc.php?d=9&id=6729&s=37' alt='Free Website Hit Counter'>
     <br />
     <img class="gif" src="dolphins.gif" alt="Dolphins leaving earth animation">
