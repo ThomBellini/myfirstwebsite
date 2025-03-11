@@ -1,13 +1,16 @@
 body {
     background-color: darkorange;
     cursor: help;
+    font-family: Arial, sans-serif;
     background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px);
     scrollbar-width: large;
     scrollbar-color: rgb(255, 0, 0) rgb(0, 0, 255);
     scroll-behavior: smooth;
     text-align: center;
-    text-shadow: 0cqmin 0cm 0cm rgba(0, 0, 0, 0.5);
-    border-style: double
+    text-shadow: 0cm 0cm 0cm rgba(0, 0, 0, 0.5);
+    border-style: double;
+    background-blend-mode: exclusion;
+    background-size: cover;
 
 
     
@@ -39,10 +42,12 @@ body {
 }
 h1 {
     font-size: 300%;
-    color: rgb(92, 19, 26);
+    color: rgb(255, 251, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: groove 10px rgb(177, 12, 12);
     border-radius: 25px;
+    background-image: url("rainforest.jpg");
+    background-color: #cccccc;
 
 }
 h2 {
@@ -74,4 +79,29 @@ img {
 .counter {
 
     size: 10%;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #38741a66;
+    border: double;
+    border-radius: 30px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hacker {
+    overflow: hidden;
+    background-image: url("matrix.jpg");
+     background-color: #cccccc;
+    border: double;
+    border-radius: 30px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
