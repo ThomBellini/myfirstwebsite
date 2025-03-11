@@ -38,26 +38,21 @@ body {
     background-color: green;
 }
 h1 {
-    font-size: xx-large;
+    font-size: 500%;
     color: rgb(92, 19, 26);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
-    font-size: medium;
+    font-size: 250%;
     color: royalblue;
 }
 h3 {
-    font-size: medium;
+    font-size: 250%;
     color: rgb(1, 115, 60);
 }
 h4 {
-    font-size: xx-large;
+    font-size: 500%;
     color: brown;
-}
-p {
-    font-size: 30px;
-    color: rgb(115, 18, 1);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 img {
     border-radius: 25px;
