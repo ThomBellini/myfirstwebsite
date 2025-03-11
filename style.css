@@ -84,24 +84,28 @@ img {
 #navbar {
     overflow: hidden;
     background-color: #38741a66;
-    border: double;
-    border-radius: 30px;
-    height:auto;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#hacker {
-    overflow: hidden;
     background-image: url("matrix.jpg");
-     background-color: #cccccc;
     border: double;
     border-radius: 30px;
+    border-color: crimson;
+    border-width: 5px;
     height:auto;
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-}
+    font-family: papyrus;
+    font-style: italic;
+    a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 40px;
+    }
+    a:hover, a:active {
+        background-color: red;}
+    }
+  

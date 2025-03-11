@@ -24,6 +24,10 @@
             <div class="mole" id="mole6"></div>
         </div>
     </div>
+    <div class="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard-list"></ul>
+    </div>
     <script>
         const moles = document.querySelectorAll('.mole');
         let score = 0;
@@ -59,8 +63,16 @@
             if (timeLeft <= 0) {
                 clearInterval(gameInterval);
                 clearInterval(timerInterval);
-                alert('Game over! Your score is ' + score);
+                const playerName = prompt('Game over! Your score is ' + score + '. Enter your name:');
+                updateLeaderboard(playerName, score);
             }
+        }
+
+        function updateLeaderboard(name, score) {
+            const leaderboardList = document.getElementById('leaderboard-list');
+            const listItem = document.createElement('li');
+            listItem.textContent = `${name}: ${score}`;
+            leaderboardList.appendChild(listItem);
         }
 
         moles.forEach(mole => mole.addEventListener('click', whackMole));
