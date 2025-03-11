@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thom's Website(⌐■_■)</title>
+    <link rel=icon href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1> Thom's Website (⌐■_■) </h1>
+    <h2> Thanks so much for visiting! ( ͡° ͜ʖ ͡°) </h2>
+    <h3>I'm so glad you're here! ✧♡(◕‿◕✿)</h3>
+    <p> Right now this website is super simple, but what can I say? </p>
+    <p>I'm learning!</p>
+    <p>¯\_(ツ)_/¯ </p>
+    <img src="dontpanic.jpeg" alt="dont panic logo"> 
+
+    <p>Play whack a mole:</p>
+    <p>Click on the green circles to score points. You have 60 seconds to score as many points as possible.</p>
+    <div class="game-container">
+        <div class="score-board">Score: <span id="score">0</span></div>
+        <div class="time-board">Time: <span id="time">60</span>s</div>
+        <div class="mole-container">
+            <div class="mole" id="mole1"></div>
+            <div class="mole" id="mole2"></div>
+            <div class="mole" id="mole3"></div>
+            <div class="mole" id="mole4"></div>
+            <div class="mole" id="mole5"></div>
+            <div class="mole" id="mole6"></div>
+        </div>
+    </div>
+    <script>
+        const moles = document.querySelectorAll('.mole');
+        let score = 0;
+        let activeMole = null;
+        let timeLeft = 60;
+        let gameInterval;
+        let timerInterval;
+
+        function randomMole() {
+            moles.forEach(mole => mole.classList.remove('active'));
+            const index = Math.floor(Math.random() * moles.length);
+            activeMole = moles[index];
+            activeMole.classList.add('active');
+        }
+
+        function whackMole(event) {
+            if (event.target === activeMole) {
+                score++;
+                document.getElementById('score').textContent = score;
+                activeMole.classList.remove('active');
+                randomMole();
+            }
+        }
+
+        function startGame() {
+            gameInterval = setInterval(randomMole, 1000);
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            timeLeft--;
+            document.getElementById('time').textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(gameInterval);
+                clearInterval(timerInterval);
+                alert('Game over! Your score is ' + score);
+            }
+        }
+
+        moles.forEach(mole => mole.addEventListener('click', whackMole));
+
+        startGame();
+    </script>
+  
+    <h3>Thanks for playing! (づ｡◕‿‿◕｡)</h3>
+    <h4>\m/_(>_<)_\m/</h4>
+
+    <footer>
+        <p>© 2025 Thom's Website. All rights reserved. (⌐■_■)</p>
+    </footer>
+
+</body>
+</html>
