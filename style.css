@@ -44,6 +44,7 @@ h1 {
     border: groove 10px rgb(177, 12, 12);
     border-radius: 25px;
 
+}
 h2 {
     font-size: 250%;
     color: royalblue;
@@ -59,7 +60,7 @@ h4 {
 p {
     font-size: 30px;
     color: rgb(115, 18, 1);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Helvetica;
 }
 img {
     border-radius: 25px;
@@ -71,5 +72,6 @@ img {
 }
 
 .counter {
-    size: 10px;
+
+    size: 10%;
 }
