@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
     text-align: center;
     text-shadow: 0cqmin 0cm 0cm rgba(0, 0, 0, 0.5);
-    border-style: double;
+    border-style: double
 
 
     
@@ -41,6 +41,10 @@ h1 {
     font-size: 500%;
     color: rgb(92, 19, 26);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: groove 10px rgb(177, 12, 12);
+    margin top:20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 h2 {
     font-size: 250%;
@@ -66,4 +70,8 @@ img {
 
 .gif {
     width: 40%;
+}
+
+.counter {
+    size: 10px;
 }
