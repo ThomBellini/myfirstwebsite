@@ -38,20 +38,20 @@ body {
     background-color: green;
 }
 h1 {
-    font-size: 100px;
+    font-size: xx-large;
     color: rgb(92, 19, 26);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
-    font-size: 80px;
+    font-size: medium;
     color: royalblue;
 }
 h3 {
-    font-size: 60px;
+    font-size: medium;
     color: rgb(1, 115, 60);
 }
 h4 {
-    font-size: 200px;
+    font-size: xx-large;
     color: brown;
 }
 p {
