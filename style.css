@@ -96,16 +96,31 @@ img {
     align-items: center;
     font-family: papyrus;
     font-style: italic;
+    font-size: 70%;
     a:link, a:visited {
         background-color: #f44336;
         color: white;
-        padding: 14px 25px;
+        padding: 5% 5%;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         border-radius: 40px;
+        border: double;
+        border-color: rgb(0, 0, 0);
     }
     a:hover, a:active {
-        background-color: red;}
+        background-color: red;
+        background-image: url(space.jpg) ;
+        background-size: 30%;
+        background-position: center;
+        border-style: dotted;
+        border-spacing: 30%;
+        border-width: 50%;
+        border-color: rgb(1, 115, 60);
+        font-size: 200%;
+        font-family: cursive;
+        color: rgb(111, 255, 0);
     }
+    }
+    
   
