@@ -16,6 +16,83 @@ body {
     
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+        font-size: 14px;
+    }
+
+    .game-container {
+        margin-top: 10px;
+    }
+
+    .score-board, .time-board {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .mole-container {
+        grid-template-columns: repeat(2, 100px);
+        grid-gap: 5px;
+    }
+
+    .mole {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    h4 {
+        font-size: 250%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .gif {
+        width: 60%;
+    }
+
+    .counter {
+        size: 8%;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50%;
+    }
+
+    #navbar a:link, #navbar a:visited {
+        padding: 10% 10%;
+    }
+
+    #navbar a:hover, #navbar a:active {
+        font-size: 150%;
+    }
+   
+
+    
+}
+
 .game-container {
     text-align: center;
     margin-top: 20px;
